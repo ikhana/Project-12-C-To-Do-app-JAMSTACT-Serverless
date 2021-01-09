@@ -1,0 +1,12 @@
+{
+  "name": "Project-12-C-To-Do-app-JAMSTACT-Serverless",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ikhana/Project-12-C-To-Do-app-JAMSTACT-Serverless.git",
+  "license": "MIT",
+  "private": true,
+  "workspaces":[
+    "packages/*"
+  ]
+
+}
