@@ -1,15 +1,19 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Container, Heading, Button, Flex } from "theme-ui";
+import netlifyIdentity from "netlify-identity-widget";
 
 
 
-const index = () => {
+export default props => {
+    useEffect(()=>{
+netlifyIdentity.init({});
+    });
     return (
         <Container>
             <Flex sx={{flexDirection: 'column', padding: 3}}> 
                 <Heading as="h1">Todo App </Heading>
                 <Button sx={{marginTop: 4}}
-                onClick={()=>{alert('LogIn me')}}
+                onClick={()=>{netlifyIdentity.open();}}
                 >LogIn</Button>
                 </Flex>
 
@@ -17,5 +21,5 @@ const index = () => {
     )
 }
 
-export default index;
+
 
