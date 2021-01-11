@@ -1,10 +1,19 @@
 import React from 'react'
+import { Container, Heading, Button, Flex } from "theme-ui";
+
+
 
 const index = () => {
     return (
-        <div>
-            Hello World
-        </div>
+        <Container>
+            <Flex sx={{flexDirection: 'column', padding: 3}}> 
+                <Heading as="h1">Todo App </Heading>
+                <Button sx={{marginTop: 4}}
+                onClick={()=>{alert('LogIn me')}}
+                >LogIn</Button>
+                </Flex>
+
+        </Container>
     )
 }
 
